@@ -11,6 +11,9 @@
 		37148E5B22B973F50097612F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37148E5922B973F50097612F /* Main.storyboard */; };
 		37148E5D22B973F60097612F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37148E5C22B973F60097612F /* Assets.xcassets */; };
 		37148E6022B973F60097612F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37148E5E22B973F60097612F /* LaunchScreen.storyboard */; };
+		37148E6822B97B520097612F /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37148E6722B97B520097612F /* SearchResult.swift */; };
+		37148E6A22B97E620097612F /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37148E6922B97E620097612F /* ResultType.swift */; };
+		37148E6C22B97EF10097612F /* SearchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37148E6B22B97EF10097612F /* SearchResultController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		37148E5C22B973F60097612F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37148E5F22B973F60097612F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37148E6122B973F70097612F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37148E6722B97B520097612F /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		37148E6922B97E620097612F /* ResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultType.swift; sourceTree = "<group>"; };
+		37148E6B22B97EF10097612F /* SearchResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				37148E5C22B973F60097612F /* Assets.xcassets */,
 				37148E5E22B973F60097612F /* LaunchScreen.storyboard */,
 				37148E6122B973F70097612F /* Info.plist */,
+				37148E6722B97B520097612F /* SearchResult.swift */,
+				37148E6922B97E620097612F /* ResultType.swift */,
+				37148E6B22B97EF10097612F /* SearchResultController.swift */,
 			);
 			path = iTunesSearch;
 			sourceTree = "<group>";
@@ -132,6 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37148E6C22B97EF10097612F /* SearchResultController.swift in Sources */,
+				37148E6822B97B520097612F /* SearchResult.swift in Sources */,
+				37148E6A22B97E620097612F /* ResultType.swift in Sources */,
 				37148E5622B973F50097612F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
