@@ -14,6 +14,7 @@
 		37148E6822B97B520097612F /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37148E6722B97B520097612F /* SearchResult.swift */; };
 		37148E6A22B97E620097612F /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37148E6922B97E620097612F /* ResultType.swift */; };
 		37148E6C22B97EF10097612F /* SearchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37148E6B22B97EF10097612F /* SearchResultController.swift */; };
+		37148E7122B990540097612F /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37148E7022B990540097612F /* SearchResultsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		37148E6722B97B520097612F /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		37148E6922B97E620097612F /* ResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultType.swift; sourceTree = "<group>"; };
 		37148E6B22B97EF10097612F /* SearchResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultController.swift; sourceTree = "<group>"; };
+		37148E7022B990540097612F /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,49 @@
 		37148E5422B973F50097612F /* iTunesSearch */ = {
 			isa = PBXGroup;
 			children = (
+				37148E7222B9905B0097612F /* ViewController */,
 				37148E5522B973F50097612F /* AppDelegate.swift */,
-				37148E5922B973F50097612F /* Main.storyboard */,
-				37148E5C22B973F60097612F /* Assets.xcassets */,
-				37148E5E22B973F60097612F /* LaunchScreen.storyboard */,
-				37148E6122B973F70097612F /* Info.plist */,
+				37148E6E22B98D3A0097612F /* Storyboard */,
+				37148E6D22B98D2C0097612F /* Model */,
+				37148E6F22B98D4C0097612F /* Resources */,
+			);
+			path = iTunesSearch;
+			sourceTree = "<group>";
+		};
+		37148E6D22B98D2C0097612F /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				37148E6722B97B520097612F /* SearchResult.swift */,
 				37148E6922B97E620097612F /* ResultType.swift */,
 				37148E6B22B97EF10097612F /* SearchResultController.swift */,
 			);
-			path = iTunesSearch;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37148E6E22B98D3A0097612F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				37148E5922B973F50097612F /* Main.storyboard */,
+				37148E5E22B973F60097612F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		37148E6F22B98D4C0097612F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37148E5C22B973F60097612F /* Assets.xcassets */,
+				37148E6122B973F70097612F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		37148E7222B9905B0097612F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				37148E7022B990540097612F /* SearchResultsTableViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +178,7 @@
 			files = (
 				37148E6C22B97EF10097612F /* SearchResultController.swift in Sources */,
 				37148E6822B97B520097612F /* SearchResult.swift in Sources */,
+				37148E7122B990540097612F /* SearchResultsTableViewController.swift in Sources */,
 				37148E6A22B97E620097612F /* ResultType.swift in Sources */,
 				37148E5622B973F50097612F /* AppDelegate.swift in Sources */,
 			);
