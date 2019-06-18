@@ -32,15 +32,17 @@
                                         <segment title="Movies"/>
                                     </segments>
                                 </segmentedControl>
-                                <searchBar contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BFG-Mf-iSs">
+                                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="BFG-Mf-iSs">
                                     <rect key="frame" x="0.0" y="52" width="414" height="56"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
+                                <constraint firstItem="BFG-Mf-iSs" firstAttribute="leading" secondItem="lUZ-Z2-5bX" secondAttribute="leading" id="36O-Bg-K14"/>
                                 <constraint firstItem="0Hl-dn-yOb" firstAttribute="top" secondItem="lUZ-Z2-5bX" secondAttribute="top" constant="8" id="5qQ-bh-JPg"/>
                                 <constraint firstItem="0Hl-dn-yOb" firstAttribute="leading" secondItem="lUZ-Z2-5bX" secondAttribute="leading" constant="10" id="BhC-Ms-1fi"/>
+                                <constraint firstItem="BFG-Mf-iSs" firstAttribute="centerX" secondItem="0Hl-dn-yOb" secondAttribute="centerX" id="WbU-UJ-SU3"/>
                                 <constraint firstItem="BFG-Mf-iSs" firstAttribute="top" secondItem="0Hl-dn-yOb" secondAttribute="bottom" constant="8" id="c4r-WP-yS3"/>
                                 <constraint firstAttribute="trailing" secondItem="0Hl-dn-yOb" secondAttribute="trailing" constant="10" id="chC-fz-if9"/>
                             </constraints>
@@ -77,6 +79,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="iTunes Search" id="wUo-QV-OFf"/>
+                    <connections>
+                        <outlet property="searchBar" destination="BFG-Mf-iSs" id="Gds-1T-Sgj"/>
+                        <outlet property="segControl" destination="0Hl-dn-yOb" id="on6-vb-qqF"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uzo-bf-HLV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

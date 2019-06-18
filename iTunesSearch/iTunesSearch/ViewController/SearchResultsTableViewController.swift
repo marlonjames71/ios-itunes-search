@@ -12,12 +12,16 @@ class SearchResultsTableViewController: UITableViewController {
 	
 	// MARK: - Properties
 	
+	@IBOutlet var segControl: UISegmentedControl!
+	@IBOutlet var searchBar: UISearchBar!
+	
 	let searchResultsController = SearchResultController()
-
+	
 	// MARK: - Lifecycle
 	
     override func viewDidLoad() {
         super.viewDidLoad()
+		searchBar.delegate = self
     }
 
     // MARK: - Table view data source
@@ -36,4 +40,27 @@ class SearchResultsTableViewController: UITableViewController {
 	
         return cell
     }
+}
+
+extension SearchResultsTableViewController: UISearchBarDelegate {
+	func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+		guard let searchTerm = searchBar.text else { return }
+		var resultType: ResultType!
+		switch segControl.selectedSegmentIndex {
+		case 0:
+			resultType = .software
+		case 1:
+			resultType = .musicTrack
+		case 2:
+			resultType = .movie
+		default:
+			resultType = .movie
+		}
+		
+		searchResultsController.performSearch(searchTerm: searchTerm, resultType: resultType) { (error) in
+			DispatchQueue.main.async {
+				self.tableView.reloadData()
+			}
+		}
+	}
 }

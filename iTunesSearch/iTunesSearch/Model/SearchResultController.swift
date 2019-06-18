@@ -22,8 +22,9 @@ class SearchResultController {
 	
 	func performSearch(searchTerm: String, resultType: ResultType, completion: @escaping (Error?) -> Void) {
 		var urlComponents = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
+		let entityQueryItem = URLQueryItem(name: ("entity"), value: resultType.rawValue)
 		let searchTermQueryItems = URLQueryItem(name: "term", value: searchTerm)
-		urlComponents?.queryItems = [searchTermQueryItems]
+		urlComponents?.queryItems = [searchTermQueryItems, entityQueryItem]
 		guard let requestURL = urlComponents?.url else {
 			print("request URL is nil")
 			completion(nil)
